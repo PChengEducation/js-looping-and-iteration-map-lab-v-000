@@ -5,3 +5,11 @@ function lowerCaseDrivers(drivers){
   });
   return lowerCased;
 }
+
+function nameToAttributes(names){
+  const objects = names.map(function(name){
+    let new.Names = name.split(" ");
+    return Object.assign({}, {["firstName"]: newNames[0], ["lastName"]: newNames[1]});
+  });
+  return objects;
+}
