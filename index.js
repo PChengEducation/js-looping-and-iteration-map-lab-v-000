@@ -13,3 +13,10 @@ function nameToAttributes(names){
   });
   return objects;
 }
+
+function attributesToPhrase(array){
+  const sentence = array.map(function(driver){
+    return '${driver.name} is from ${driver.hometown}';
+  });
+  return sentence;
+}
